@@ -1,0 +1,50 @@
+/home/stetsenko/ksolutions/firstcard/venv/bin/python3 /snap/pycharm-professional/89/helpers/pydev/pydevd.py --multiproc --qt-support=auto --client 127.0.0.1 --port 33275 --file /home/stetsenko/ksolutions/firstcard/core/testing.py
+pydev debugger: process 1784 is connecting
+
+Connected to pydev debugger (build 182.4505.26)
+URL:  https://demo-scrat.yamoney.ru:9094/gates/system/authorize
+Headers:  {'Content-Type': 'application/x-www-form-urlencoded'}
+{'amount': 0.1,
+ 'authorize_timeout_action': 'cancel',
+ 'authorized_timeout': 360,
+ 'auto_clearing': 0,
+ 'card_number': '4444444444444448',
+ 'cardholder': 'JOHN SMITH',
+ 'client_ip': '173.65.34.137',
+ 'currency': 'RUB',
+ 'cvn': '000',
+ 'description': 'test pay',
+ 'expiration_month': '06',
+ 'expiration_year': '2019',
+ 'fail_url_3ds': 'https://hello.com/payment/failed',
+ 'force_3ds': 1,
+ 'merchant_order_id': '1cdc8badb0364ad0b5b0499e34b848e7',
+ 'notify_url': 'https://test-core.first-icard.com/callback/1/yandexmoney',
+ 'payment_params': '{"paymentLinkParams": {"shopArticleId": 579836, "shopId": '
+                   '531189}}',
+ 'success_url_3ds': 'https://hello.com/payment/success'}
+======================================================================================================================================================
+b'<?xml version="1.0" encoding="UTF-8"?>\r\n<operation>\r\n  <authorize>\r\n    <order_id>iz0EH-Jp3mxjztluVYt-Q_D0SlAZ..000.201810</order_id>\r\n    <operation_id>36536050</operation_id>\r\n    <merchant_order_id>1cdc8badb0364ad0b5b0499e34b848e7</merchant_order_id>\r\n    <status>success</status>\r\n    <responsecode>00</responsecode>\r\n    <responsecodetext>Approved</responsecodetext>\r\n    <rrn>623788653081</rrn>\r\n    <authcode>649839</authcode>\r\n    <time>2018-10-01T13:47:35+03:00</time>\r\n    <eci>05</eci>\r\n    <mpi_result>NONE</mpi_result>\r\n    <amount>0.10</amount>\r\n    <currency>RUB</currency>\r\n  </authorize>\r\n</operation>\r\n'
+======================================================================================================================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<operation>
+  <authorize>
+    <order_id>iz0EH-Jp3mxjztluVYt-Q_D0SlAZ..000.201810</order_id>
+    <operation_id>36536050</operation_id>
+    <merchant_order_id>1cdc8badb0364ad0b5b0499e34b848e7</merchant_order_id>
+    <status>success</status>
+    <responsecode>00</responsecode>
+    <responsecodetext>Approved</responsecodetext>
+    <rrn>623788653081</rrn>
+    <authcode>649839</authcode>
+    <time>2018-10-01T13:47:35+03:00</time>
+    <eci>05</eci>
+    <mpi_result>NONE</mpi_result>
+    <amount>0.10</amount>
+    <currency>RUB</currency>
+  </authorize>
+</operation>
+
+
+Process finished with exit code 0
+
