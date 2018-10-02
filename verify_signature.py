@@ -11,6 +11,7 @@ def get_abs_path(base, path):
 
 
 def M2Crypto_verify(data):
+    # pip install M2Crypto
     # https://www.artur-rodrigues.com/tech/2013/08/19/verifying-x509-signatures-in-python.html
     # https://penguindreams.org/blog/signature-verification-between-java-and-python/
     message = '&'.join(["{}={}".format(k, data[k]) for k in sorted(data.keys()) if k != 'signature'])
@@ -49,6 +50,8 @@ def M2Crypto_try_sign(data):
 
 
 def cryptography_verify(data):
+    # pip install cryptography 
+    # https://cryptography.io/en/latest/hazmat/primitives/asymmetric/rsa/#encryption
     message = '&'.join(["{}={}".format(k, data[k]) for k in sorted(data.keys()) if k != 'signature'])
     cert_path = get_abs_path(CERTIFICATE_PATH, acquirer_cert)
     privatekey_path = get_abs_path(CERTIFICATE_PATH, acquirer_cert_key)
